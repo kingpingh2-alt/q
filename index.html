@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GreenDrive Pro</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+  <h2 class="logo">GreenDrive ⚡</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#calc">Calculator</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero fade">
+  <div class="left">
+    <h1>Drive Smart.<br><span>Save More.</span></h1>
+    <p>Switch to EV and see your savings instantly.</p>
+    <a href="#calc" class="btn">Try Calculator ↓</a>
+  </div>
+
+  <div class="right">
+    <div class="glow"></div>
+    <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a">
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section id="calc" class="calculator fade">
+
+  <h2>⚡ EV Savings Calculator</h2>
+
+  <div class="card">
+    <input type="number" id="km" placeholder="Daily KM Driven">
+    <input type="number" id="petrol" placeholder="Petrol Price (₹/L)">
+    <input type="number" id="electric" placeholder="Electricity Cost (₹/kWh)">
+    <input type="number" id="mileage" placeholder="Car Mileage (km/L)">
+
+    <button onclick="calculate()">Calculate</button>
+  </div>
+
+  <div class="result">
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <h3 id="p3"></h3>
+  </div>
+
+  <!-- GRAPH -->
+  <canvas id="chart" width="300" height="200"></canvas>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
